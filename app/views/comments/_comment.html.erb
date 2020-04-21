@@ -1,0 +1,14 @@
+<div class="card mt-3">
+  <div class="card-header">
+    <%= User.find(comment.user_id).email %>
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p><%= comment.content %></p>
+      <footer class="blockquote-footer">Commented since <%= time_ago_in_words comment.updated_at %></footer>
+    </blockquote>
+    <% if current_user == comment.user %>
+      <%= link_to "Delete", article_comment_path(@article, comment), method: :delete %>
+    <% end %>
+  </div>
+</div>

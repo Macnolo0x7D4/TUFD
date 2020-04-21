@@ -1,0 +1,10 @@
+<%= render @article %>
+
+<%= render @comments %>
+
+<%= render "comments/form" %>
+
+<% if current_user == @article.user %>
+  <button><%=link_to "Delete Article", @article, method: :delete %></button>
+  <button><%=link_to "Edit Article", edit_article_path%></button>
+<% end %>

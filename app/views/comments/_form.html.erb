@@ -1,0 +1,21 @@
+<% if user_signed_in? %>
+  <%= form_with(model: [@article, @comment]) do |form| %>
+    <div class="card mt-4">
+      <div class="card-body">
+        <%= form.text_area :content, { placeholder:"Write your comment here" } %>
+        <div class="actions">
+          <%= form.submit %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+<% else %>
+  <div class="card mt-4">
+    <div class="card-body">
+      <p>You need to sign in to create comments or articles.</p>
+    </div>
+    <div class="card-footer">
+      <%= link_to "Log in", new_user_session_path, class:"btn btn-link" %>
+    </div>
+  </div>
+<% end %>

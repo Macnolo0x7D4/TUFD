@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TUFD</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container-fluid"><a class="navbar-brand js-scroll-trigger d-none d-sm-block" href="#page-top">The Unofficial FIRST Documentation</a><a class="navbar-brand js-scroll-trigger d-block d-sm-none" href="#page-top">TUFD</a><button data-toggle="collapse" data-target="#navbarResponsive"
+                                                                                                                                                                                                                                                   class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-align-justify"></i></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#about">FORUM</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#services">Manuals</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#portfolio">ranks</a></li>
+            <li class="nav-item" role="presentation">
+              <% if user_signed_in? %>
+                <%= link_to "Sign out", destroy_user_session_path, method: :delete, class:"nav-link js-scroll-trigger"%>
+              <% else %>
+                <%= link_to "Log in", new_user_session_path, class:"nav-link js-scroll-trigger"%>
+              <% end %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+
+    <%= yield %>
+  <%= javascript_tag "toastr.success('Hey')" %>
+  </body>
+</html>
