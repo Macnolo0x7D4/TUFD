@@ -1,10 +1,14 @@
-<%= render @article %>
+<div class="container mx-auto">
 
-<%= render @comments %>
+  <%= render @article %>
 
-<%= render "comments/form" %>
+  <%= render @comments %>
 
-<% if current_user == @article.user %>
-  <button><%=link_to "Delete Article", @article, method: :delete %></button>
-  <button><%=link_to "Edit Article", edit_article_path%></button>
-<% end %>
+  <%= render "comments/form" %>
+
+  <% if current_user == @article.user %>
+    <button><%=link_to "Delete Article", @article, method: :delete %></button>
+    <button><%=link_to "Edit Article", edit_article_path%></button>
+  <% end %>
+
+</div>

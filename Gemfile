@@ -22,7 +22,6 @@ gem 'jquery-rails'
 
 gem 'devise'
 
-gem 'toastr-rails'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 gem 'bcrypt'

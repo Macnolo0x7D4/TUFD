@@ -5,11 +5,12 @@ class UsersController < ApplicationController
     @articles = @user.articles
   end
 
-  def find
-    @user = User.find(params[:id])
-  end
+  private
+    def find
+      @user = User.find(params[:id])
+    end
 
-  def user_params
-    params.permit(:avatar)
-  end
+    def user_params
+      params.permit(:avatar)
+    end
 end
