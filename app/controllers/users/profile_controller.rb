@@ -1,8 +1,7 @@
-class UsersController < ApplicationController
+class Users::ProfileController < ApplicationController
   before_action :find, only: [:articles]
 
   def articles
-    @articles = @user.articles
   end
 
   private

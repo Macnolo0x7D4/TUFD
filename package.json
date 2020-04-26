@@ -2,6 +2,7 @@
   "name": "TUFD",
   "private": true,
   "dependencies": {
+    "@babel/preset-react": "^7.9.4",
     "@popperjs/core": "^2.3.3",
     "@rails/actioncable": "^6.0.0",
     "@rails/actiontext": "^6.0.2-2",
@@ -9,14 +10,21 @@
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.2.2",
     "autoprefixer": "^9.7.6",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "bootstrap": "^4.4.1",
     "channels": "^0.0.4",
     "jquery": "^3.5.0",
     "popper.js": "^1.16.1",
+    "prop-types": "^15.7.2",
+    "react-dom": "^16.13.1",
+    "react_ujs": "^2.6.1",
     "toastr": "^2.1.4",
     "trix": "^1.0.0",
     "turbolinks": "^5.2.0",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-loader": "^15.9.1",
+    "vue-template-compiler": "^2.6.11",
+    "vuex": "^3.3.0"
   },
   "version": "0.1.0",
   "devDependencies": {

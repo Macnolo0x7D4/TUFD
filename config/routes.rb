@@ -1,15 +1,19 @@
 Rails.application.routes.draw do
 
-  devise_for :admins
+  devise_for :admin
+  devise_for :users
+
   resources :articles do
     resources :comments
   end
 
   resources :categories
 
-  devise_for :users
-  root to: 'home#index'
+  namespace :users do
+    get ':id/profile/', :to => 'profile#index', :as => :profile
+    get ':id/profile/articles', :to => 'profile#articles', :as => :articles
+  end
 
-  get 'users/:id/articles', to: 'users#articles'
+  root to: 'home#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

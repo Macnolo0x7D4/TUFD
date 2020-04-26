@@ -9,10 +9,8 @@ class User < ApplicationRecord
   has_many :comments
   has_many :category_articles
 
-  def process_avatar
-    unless avatar_url.nil? or avatar_url.empty?
-      hash = Digest::MD5.hexdigest user.email
-      User.update self, {:avatar_url => "http://www.gravatar.com/avatar/#{hash}"}
-    end
+  def avatar
+    hash = Digest::MD5.hexdigest email
+    "http://www.gravatar.com/avatar/#{hash}"
   end
 end
