@@ -11,7 +11,8 @@ require("trix")
 require("@rails/actiontext")
 require("vue")
 
-import '../css/application.css'
+import "@fortawesome/fontawesome-free/js/all";
+import '../css/application.scss'
 import './navbar'
 import './banner'
 
