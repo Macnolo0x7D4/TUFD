@@ -20,19 +20,15 @@
     </div>
 
     <% if notice %>
-      <%= render "layouts/notice" %>
+      <%= render "shared/notice" %>
     <% elsif alert %>
-      <%= render "layouts/alert" %>
+      <%= render "shared/alert" %>
+    <% elsif local_variables.include?(:resource) %>
+      <% if resource.errors.any? %>
+        <%= render "shared/error", resource: resource %>
+      <% end %>
     <% end %>
 
-    <%= render 'layouts/navbar' %>
-
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
-      <%= yield %>
-    </div>
-
-    <footer>
-      <%= render 'layouts/footer' %>
-    </footer>
+    <%= yield %>
   </body>
 </html>

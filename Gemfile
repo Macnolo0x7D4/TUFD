@@ -22,6 +22,7 @@ gem 'jquery-rails'
 
 gem 'devise'
 
+gem "recaptcha"
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 gem 'bcrypt'
