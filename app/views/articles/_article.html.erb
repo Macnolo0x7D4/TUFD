@@ -1,32 +1,8 @@
-<div class="max-w-sm w-full lg:max-w-full lg:flex mb-4">
-    <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url(<%= image_path('header.jpg')%>)" title="Woman holding a mug">
-    </div>
-    <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal w-full">
-      <div class="mb-8">
-        <div class="inline-flex">
-          <% article.categories.each do |category|%>
-          <p class="flex-1 text-sm text-white-600 flex items-center">
-              <span class="text-700">
-                <%= link_to category.title, category, class:"ml-4 rounded-full px-2 py-0.5 flex items-center text-xs leading-4 tracking-wide uppercase font-semibold text-white",  style:"background-color: " + category.color + ";"%>
-              </span>
-          </p>
-          <% end %>
-        </div>
-        <div class="text-gray-900 font-bold text-xl mb-2"><%= link_to article.title, article %></div>
-        <div class="text-gray-700 text-base">
-          <%= truncate strip_tags(article.content.to_s), length: 65 %>
-        </div>
-      </div>
-      <div class="flex items-center">
-        <%= link_to users_profile_path(article.user.id) do %>
-          <img class="w-10 h-10 rounded-full mr-4" src="<%= article.user.avatar %>">
-        <% end %>
-        <div class="text-sm">
-          <%= link_to users_profile_path(article.user.id) do %>
-            <p class="text-gray-900 leading-none"><%= article.user.username %></p>
-          <% end %>
-          <p class="text-gray-600"><%= time_ago_in_words article.updated_at %></p>
-        </div>
-      </div>
-    </div>
+<div class="">
+  <div class="flex justify-center">
+    <h2 class="text-4xl font-semibold"><%= article.title %></h2>
+  </div>
+  <div class="text-justify">
+    <p><%= article.content %></p>
+  </div>
 </div>

@@ -1,19 +1,14 @@
 <%= render "shared/navbar" %>
-<div class="container mx-auto">
+<div class="container mx-auto my-5">
   <%= render @article %>
+  <div class="mx-2 my-5">
+    <h3 class="text-2xl text-gray-700 font-semibold">
+      Comments
+    </h3>
+  </div>
   <%= render @comments %>
   <%= render "comments/form" %>
-  <% if user_signed_in? %>
-    <% if current_user.likes.where(article: @article).empty? %>
-      <%= link_to article_likes_path(@article), method: :post do %>
-        <i class="far fa-heart"></i>
-      <% end %>
-    <% else %>
-      <%= link_to article_like_path(Like.find(current_user.likes.where(article: @article).first.id)), method: :delete do %>
-        <i class="fas fa-heart"></i>
-      <% end %>
-    <% end %>
-  <% end %>
+
   <% if current_user == @article.user %>
     <button><%=link_to "Delete Article", @article, method: :delete %></button>
     <button><%=link_to "Edit Article", edit_article_path%></button>

@@ -1,0 +1,16 @@
+<%= render "shared/navbar" %>
+<div>
+  <div class="container">
+    <div class="flex justify-center mt-4 w-full">
+      <h2 class="text-4xl">Explore new Articles</h2>
+    </div>
+  </div>
+  <div class="container-fluid mb-5">
+    <div class="overflow-hidden">
+      <div class="flex flex-wrap justify-around xs:justify-center xs:mx-1">
+        <%= render :partial => 'articles/article_preview_alt', :collection => @articles %>
+      </div>
+    </div>
+  </div>
+</div>
+<%= render "shared/footer" %>

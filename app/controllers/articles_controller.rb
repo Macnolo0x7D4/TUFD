@@ -41,6 +41,7 @@ class ArticlesController < ApplicationController
   def destroy
     @article.categories.destroy_all
     @article.comments.destroy_all
+    @article.likes.destroy_all
     @article.destroy
     redirect_to root_path
   end

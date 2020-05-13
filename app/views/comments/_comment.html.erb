@@ -1,14 +1,27 @@
-<div class="card mt-3">
-  <div class="card-header">
-    <%= User.find(comment.user_id).email %>
-  </div>
-  <div class="card-body">
-    <blockquote class="blockquote mb-0">
-      <p><%= comment.content %></p>
-      <footer class="blockquote-footer">Commented since <%= time_ago_in_words comment.updated_at %></footer>
-    </blockquote>
-    <% if current_user == comment.user %>
-      <%= link_to "Delete", article_comment_path(@article, comment), method: :delete %>
+<div class="flex flex-row mb-2 group p-4 rounded-md text-sm hover:bg-gray-50">
+  <div class="hidden lg:block lg:mr-3 flex-shrink-0">
+    <%= link_to users_profile_path(comment.user) do %>
+      <%= image_tag comment.user.avatar, class:"inline w-12 h-12 thumbnail text-sm border-2 border-transparent rounded-full" %>
     <% end %>
+  </div>
+  <div class="min-w-0 flex-grow">
+    <div>
+      <div class="h6 my-0 flex justify-between mb-2">
+        <div>
+          <%= link_to users_profile_path(comment.user), class:"text-indigo-600 font-semibold hover:text-indigo-500" do %>
+            <%= comment.user.username %>
+          <% end %>
+          <small class="text-gray-800">
+            <span class="inline text-gray-500 text-xs"><%= time_ago_in_words comment.created_at %></span>
+          </small>
+          <% if current_user == comment.user %>
+            <%= link_to "Delete", article_comment_path(@article, comment), method: :delete, class:"mx-3 px-2 py-0.5 bg-indigo-600 text-gray-200 font-semibold rounded" %>
+          <% end %>
+        </div>
+      </div>
+      <div class="mb-2 prose">
+        <%= comment.content %>
+      </div>
+    </div>
   </div>
 </div>
