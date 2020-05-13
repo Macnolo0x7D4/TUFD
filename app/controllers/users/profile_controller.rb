@@ -1,5 +1,8 @@
 class Users::ProfileController < ApplicationController
-  before_action :find, only: [:articles]
+  before_action :find, only: [:show, :articles]
+
+  def show
+  end
 
   def articles
   end

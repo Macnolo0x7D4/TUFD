@@ -11,10 +11,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0733cd68-10e4-45dc-af02-db52a7dc821d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/tufd-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/users/profile/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TUFD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TUFD.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/categories_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/categories_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/category.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/category.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/categories/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/categories/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users/profile_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/profile_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/article.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/article.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/articles/_article.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/_article.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/articles/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/articles/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/articles/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/articles/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/profile/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,22 +68,24 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/javascript/packs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/assets/images" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/javascript/packs" />
-      <recent name="$PROJECT_DIR$/app/assets/images/fullsize" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/views" />
       <recent name="$PROJECT_DIR$/app/views/layouts/shared" />
       <recent name="$PROJECT_DIR$/app/views/layouts/components" />
       <recent name="$PROJECT_DIR$/app/views/users" />
       <recent name="$PROJECT_DIR$/app/views/profile" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/images" />
+      <recent name="$PROJECT_DIR$/app/javascript/packs" />
+      <recent name="$PROJECT_DIR$/app/assets/images/fullsize" />
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: TUFD">
@@ -202,6 +221,9 @@
       <workItem from="1587859047429" duration="2045000" />
       <workItem from="1587866084357" duration="57201000" />
       <workItem from="1588382723983" duration="5612000" />
+      <workItem from="1588718684937" duration="9000" />
+      <workItem from="1589305129156" duration="3016000" />
+      <workItem from="1589312712105" duration="23853000" />
     </task>
     <servers />
   </component>
@@ -221,68 +243,72 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="177" y="55" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587003422772">
+    <state x="177" y="55" width="859" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589328995132">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="177" y="55" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1294.741@72.27.1294.741" timestamp="1587003422772" />
+    <state x="177" y="55" width="859" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1294.741@72.27.1294.741" timestamp="1589328995132" />
     <state x="447" y="195" width="534" height="411" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587479236801">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="447" y="195" width="534" height="411" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1294.741@72.27.1294.741" timestamp="1587479236801" />
-    <state width="1802" height="177" key="GridCell.Tab.0.bottom" timestamp="1588389080475">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state width="1248" height="215" key="GridCell.Tab.0.bottom" timestamp="1589312882392">
+      <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="177" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1588388405801" />
+    <state width="1248" height="215" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1589312882392" />
     <state width="1802" height="177" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1588389080475" />
-    <state width="1802" height="177" key="GridCell.Tab.0.center" timestamp="1588389080470">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state width="1248" height="215" key="GridCell.Tab.0.center" timestamp="1589312882390">
+      <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="177" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1588388405792" />
+    <state width="1248" height="215" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1589312882390" />
     <state width="1802" height="177" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1588389080470" />
-    <state width="1802" height="177" key="GridCell.Tab.0.left" timestamp="1588389080470">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state width="1248" height="215" key="GridCell.Tab.0.left" timestamp="1589312882388">
+      <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="177" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1588388405789" />
+    <state width="1248" height="215" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1589312882388" />
     <state width="1802" height="177" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1588389080470" />
-    <state width="1802" height="177" key="GridCell.Tab.0.right" timestamp="1588389080474">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state width="1248" height="215" key="GridCell.Tab.0.right" timestamp="1589312882391">
+      <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="177" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1588388405800" />
+    <state width="1248" height="215" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1589312882391" />
     <state width="1802" height="177" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1588389080474" />
-    <state width="1802" height="177" key="GridCell.Tab.1.bottom" timestamp="1588389080478">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state width="1248" height="215" key="GridCell.Tab.1.bottom" timestamp="1589312882396">
+      <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="177" key="GridCell.Tab.1.bottom/72.27.1294.741@72.27.1294.741" timestamp="1588388405804" />
+    <state width="1248" height="215" key="GridCell.Tab.1.bottom/72.27.1294.741@72.27.1294.741" timestamp="1589312882396" />
     <state width="1802" height="177" key="GridCell.Tab.1.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1588389080478" />
-    <state width="1802" height="177" key="GridCell.Tab.1.center" timestamp="1588389080476">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state width="1248" height="215" key="GridCell.Tab.1.center" timestamp="1589312882394">
+      <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="177" key="GridCell.Tab.1.center/72.27.1294.741@72.27.1294.741" timestamp="1588388405803" />
+    <state width="1248" height="215" key="GridCell.Tab.1.center/72.27.1294.741@72.27.1294.741" timestamp="1589312882394" />
     <state width="1802" height="177" key="GridCell.Tab.1.center/72.27.1848.1053@72.27.1848.1053" timestamp="1588389080476" />
-    <state width="1802" height="177" key="GridCell.Tab.1.left" timestamp="1588389080476">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state width="1248" height="215" key="GridCell.Tab.1.left" timestamp="1589312882393">
+      <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="177" key="GridCell.Tab.1.left/72.27.1294.741@72.27.1294.741" timestamp="1588388405802" />
+    <state width="1248" height="215" key="GridCell.Tab.1.left/72.27.1294.741@72.27.1294.741" timestamp="1589312882393" />
     <state width="1802" height="177" key="GridCell.Tab.1.left/72.27.1848.1053@72.27.1848.1053" timestamp="1588389080476" />
-    <state width="1802" height="177" key="GridCell.Tab.1.right" timestamp="1588389080477">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state width="1248" height="215" key="GridCell.Tab.1.right" timestamp="1589312882395">
+      <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="177" key="GridCell.Tab.1.right/72.27.1294.741@72.27.1294.741" timestamp="1588388405804" />
+    <state width="1248" height="215" key="GridCell.Tab.1.right/72.27.1294.741@72.27.1294.741" timestamp="1589312882395" />
     <state width="1802" height="177" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1588389080477" />
     <state width="263" height="541" key="HiddenNamespacesPopup" timestamp="1587003406675">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state width="263" height="541" key="HiddenNamespacesPopup/72.27.1294.741@72.27.1294.741" timestamp="1587003406675" />
-    <state x="383" y="174" key="run.anything.popup" timestamp="1587933165549">
+    <state x="621" y="282" width="362" height="268" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1589345007786">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="383" y="174" key="run.anything.popup/72.27.1294.741@72.27.1294.741" timestamp="1587933165549" />
+    <state x="621" y="282" width="362" height="268" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/72.27.1294.741@72.27.1294.741" timestamp="1589345007786" />
+    <state x="383" y="174" key="run.anything.popup" timestamp="1589330075411">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="383" y="174" key="run.anything.popup/72.27.1294.741@72.27.1294.741" timestamp="1589330075411" />
     <state x="382" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1587266806024">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="382" y="89" width="672" height="678" key="search.everywhere.popup/72.27.1294.741@72.27.1294.741" timestamp="1587266806024" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TUFD@Development__TUFD.rcov" NAME="Development: TUFD Coverage Results" MODIFIED="1588388405645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
+    <SUITE FILE_PATH="coverage/TUFD@Development__TUFD.rcov" NAME="Development: TUFD Coverage Results" MODIFIED="1589312862648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
   </component>
 </project>
