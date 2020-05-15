@@ -7,10 +7,12 @@
           <%= image_tag @user.avatar_profile, class:"w-1/2 rounded-full my-3" %>
         </div>
         <h3 class="text-gray-800 font-semibold text-3xl"><%= @user.username %></h3>
-        <p class="text-gray-600 font-semibold">Email: <%= user_signed_in? ? @user.email : "You need to sign in to see the email." %></p>
-        <p class="text-gray-600 font-semibold">Rank: <span class="rounded-full tracking-wide px-2 py-0.5 bg-orange-500 text-gray-100 text-xs leading-4"><%= "Admin" %></span></p>
-        <p class="text-gray-600 font-semibold">Number of Articles: <span class="rounded-full bg-indigo-500 text-gray-100 px-2 py-0.5 leading-4 font-bold"><%= @user.articles.length %></span></p>
-        <p class="text-gray-600 font-semibold">Number of Comments: <span class="rounded-full bg-indigo-500 text-gray-100 px-2 py-0.5 leading-4 font-bold"><%= @user.comments.length %></span></p>
+        <p class="text-gray-600 font-semibold mb-1">Bio: <span class="text-gray-600 font-medium leading-4 text-justify"><%= user_signed_in? ? render(plain: @user.bio.empty? ? "No information about user." : @user.bio ) : "You need to sign in to see the bio." %></span></p>
+        <p class="text-gray-600 font-semibold mb-1">Email: <span class="text-gray-600 font-medium leading-4 text-justify"><%= user_signed_in? ? @user.email : "You need to sign in to see the email." %></span></p>
+        <p class="text-gray-600 font-semibold mb-1">Rank: <span class="rounded-full tracking-wide px-2 py-0.5 bg-orange-500 text-gray-100 text-xs leading-4"><%= "Admin" %></span></p>
+        <p class="text-gray-600 font-semibold mb-1">Experience: <span class="rounded-full tracking-wide px-2 py-0.5 bg-indigo-500 text-gray-100 text-xs leading-4 uppercase"><%=  (@user.articles.length * 10) + (@user.comments.length * 2) %> Exp</span></p>
+        <p class="text-gray-600 font-semibold mb-1">Number of Articles: <span class="rounded-full bg-indigo-500 text-gray-100 px-2 py-0.5 leading-4 font-bold"><%= @user.articles.length %></span></p>
+        <p class="text-gray-600 font-semibold mb-1">Number of Comments: <span class="rounded-full bg-indigo-500 text-gray-100 px-2 py-0.5 leading-4 font-bold"><%= @user.comments.length %></span></p>
       </div>
     </div>
     <div class="lg:col-span-8">
@@ -19,7 +21,7 @@
           <h3 class="mb-4 leading-6 font-medium text-gray-700">
             Check out the <strong>latest</strong> articles from <%= @user.username %>!
           </h3>
-          <%= render :partial => "articles/article_preview", collection: @user.articles.limit(5).order("created_at DESC") %>
+            <%= render(partial: "articles/article_preview", collection: @user.articles.limit(5).order("created_at DESC")) || render(partial: "shared/not_found", locals: {message: "#{@user.username} doesn't have articles."}) %>
         </div>
       </div>
     </div>
