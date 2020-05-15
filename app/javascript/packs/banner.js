@@ -1,6 +1,6 @@
 import Vue from "vue/dist/vue.esm";
 
-document.addEventListener("turbolinks:load", () => {
+document.addEventListener("DOMContentLoaded", () => {
   var notice = new Vue({
     el: "#banner",
     data: {

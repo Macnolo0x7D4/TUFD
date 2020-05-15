@@ -1,30 +1,36 @@
-<%= form_with(model: @article, local:true) do |form| %>
-  <div>
-    <%=form.label :title%>
-    <%= form.text_field :title %>
-  </div>
-
-  <div>
-    <%=form.label :content%>
-    <%= form.rich_text_area :content %>
-  </div>
-
-  <div>
-    <%=form.label :tags%>
-    <%= form.text_field :tags%>
-  </div>
-
-  <div>
-    <%= form.label :category_elements%>
-    <div class="row">
-      <% @categories.each do |category| %>
-        <label class="col-6 col-sm-4">
-          <%= form.check_box :category_elements, {multiple: true}, category.id, nil%>
-          <%= category.title %>
-        </label>
-      <% end %>
+<div class="container">
+  <div class="bg-white my-8 p-5 rounded-lg shadow-lg">
+    <div class="flex justify-center">
+      <h2 class="font-semibold text-indigo-600 text-4xl mb-4">Create new Article</h2>
     </div>
-  </div>
+    <%= form_with(model: @article, local:true) do |form| %>
+      <div>
+        <%= form.text_field :title, placeholder: :title, class:"appearance-none border border-gray-400 placeholder-gray-800 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" %>
+      </div>
 
-  <div><%= form.submit %></div>
-<% end %>
+      <div>
+        <%=form.label :content%>
+        <%= form.rich_text_area :content %>
+      </div>
+
+      <div>
+        <%=form.label :tags%>
+        <%= form.text_field :tags%>
+      </div>
+
+      <div>
+        <%= form.label :category_elements%>
+        <div class="row">
+          <% @categories.each do |category| %>
+            <label class="col-6 col-sm-4">
+              <%= form.check_box :category_elements, {multiple: true}, category.id, nil%>
+              <%= category.title %>
+            </label>
+          <% end %>
+        </div>
+      </div>
+
+      <div><%= form.submit %></div>
+    <% end %>
+  </div>
+</div>

@@ -23,7 +23,7 @@ class ArticlesController < ApplicationController
   def update
     @article_params = article_params
     @article_params[:tags] = params[:article][:tags].split
-
+    Obscenity.sanitize @article_params[:content]
     @article.update(@article_params)
     @article.save_categories
     redirect_to @article
@@ -31,6 +31,7 @@ class ArticlesController < ApplicationController
 
   def create
     @article_params = article_params
+    Obscenity.sanitize @article_params[:content]
     @article_params[:tags] = params[:article][:tags].split
     @article = current_user.articles.create(@article_params)
 
