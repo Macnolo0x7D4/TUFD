@@ -12,17 +12,16 @@
   <component name="ChangeListManager">
     <list default="true" id="0733cd68-10e4-45dc-af02-db52a7dc821d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/page-not-found.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/page-not-found.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/jumbo.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/jumbo.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/articles_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/articles_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/comments_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/comments_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/javascript/packs/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/packs/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/packs/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/packs/navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/articles/_article.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/_article.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/article.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/article.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/articles/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/articles/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/articles/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/new.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/articles/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sentinel/blacklist.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sentinel/blacklist.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +33,9 @@
       <list>
         <option value="SCSS File" />
         <option value="Ruby File" />
-        <option value="ERB File" />
         <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="ERB File" />
       </list>
     </option>
   </component>
@@ -102,7 +101,7 @@
       <command value="yarn add vue-turbolinks" />
     </option>
   </component>
-  <component name="RunManager" selected="IRB console.Rails console: TUFD">
+  <component name="RunManager" selected="Rails.Development: TUFD">
     <configuration name="IRB console: TUFD" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
       <module name="TUFD" />
       <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
@@ -239,12 +238,12 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="IRB console.IRB console: TUFD" />
+      <item itemvalue="IRB console.Rails console: TUFD" />
       <item itemvalue="Rails.Development: TUFD" />
       <item itemvalue="Rails.Production: TUFD" />
       <item itemvalue="Rake.spec: TUFD" />
       <item itemvalue="Rake.test: TUFD" />
-      <item itemvalue="IRB console.IRB console: TUFD" />
-      <item itemvalue="IRB console.Rails console: TUFD" />
     </list>
     <recent_temporary>
       <list>
@@ -285,7 +284,8 @@
       <workItem from="1589305129156" duration="3016000" />
       <workItem from="1589312712105" duration="41383000" />
       <workItem from="1589493444909" duration="9023000" />
-      <workItem from="1589558404811" duration="18595000" />
+      <workItem from="1589558404811" duration="20435000" />
+      <workItem from="1589640121383" duration="8929000" />
     </task>
     <servers />
   </component>
@@ -317,46 +317,46 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="444" y="67" width="324" height="666" key="EnvironmentVariablesDialog/72.27.1294.741@72.27.1294.741" timestamp="1589384510604" />
-    <state width="1248" height="181" key="GridCell.Tab.0.bottom" timestamp="1589586583558">
+    <state width="1248" height="129" key="GridCell.Tab.0.bottom" timestamp="1589642129400">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="181" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1589586583558" />
-    <state width="1802" height="177" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1588389080475" />
-    <state width="1248" height="181" key="GridCell.Tab.0.center" timestamp="1589586583557">
+    <state width="1248" height="129" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1589642129400" />
+    <state width="1802" height="181" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812799" />
+    <state width="1248" height="129" key="GridCell.Tab.0.center" timestamp="1589642129398">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="181" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1589586583557" />
-    <state width="1802" height="177" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1588389080470" />
-    <state width="1248" height="181" key="GridCell.Tab.0.left" timestamp="1589586583555">
+    <state width="1248" height="129" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1589642129398" />
+    <state width="1802" height="181" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812798" />
+    <state width="1248" height="129" key="GridCell.Tab.0.left" timestamp="1589642129391">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="181" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1589586583555" />
-    <state width="1802" height="177" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1588389080470" />
-    <state width="1248" height="181" key="GridCell.Tab.0.right" timestamp="1589586583557">
+    <state width="1248" height="129" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1589642129391" />
+    <state width="1802" height="181" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812797" />
+    <state width="1248" height="129" key="GridCell.Tab.0.right" timestamp="1589642129399">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="181" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1589586583557" />
-    <state width="1802" height="177" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1588389080474" />
-    <state width="1248" height="181" key="GridCell.Tab.1.bottom" timestamp="1589581740029">
+    <state width="1248" height="129" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1589642129399" />
+    <state width="1802" height="181" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812798" />
+    <state width="1248" height="129" key="GridCell.Tab.1.bottom" timestamp="1589642129401">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="181" key="GridCell.Tab.1.bottom/72.27.1294.741@72.27.1294.741" timestamp="1589581740029" />
-    <state width="1802" height="177" key="GridCell.Tab.1.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1588389080478" />
-    <state width="1248" height="181" key="GridCell.Tab.1.center" timestamp="1589581740028">
+    <state width="1248" height="129" key="GridCell.Tab.1.bottom/72.27.1294.741@72.27.1294.741" timestamp="1589642129401" />
+    <state width="1802" height="181" key="GridCell.Tab.1.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812802" />
+    <state width="1248" height="129" key="GridCell.Tab.1.center" timestamp="1589642129400">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="181" key="GridCell.Tab.1.center/72.27.1294.741@72.27.1294.741" timestamp="1589581740028" />
-    <state width="1802" height="177" key="GridCell.Tab.1.center/72.27.1848.1053@72.27.1848.1053" timestamp="1588389080476" />
-    <state width="1248" height="181" key="GridCell.Tab.1.left" timestamp="1589581740027">
+    <state width="1248" height="129" key="GridCell.Tab.1.center/72.27.1294.741@72.27.1294.741" timestamp="1589642129400" />
+    <state width="1802" height="181" key="GridCell.Tab.1.center/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812800" />
+    <state width="1248" height="129" key="GridCell.Tab.1.left" timestamp="1589642129400">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="181" key="GridCell.Tab.1.left/72.27.1294.741@72.27.1294.741" timestamp="1589581740027" />
-    <state width="1802" height="177" key="GridCell.Tab.1.left/72.27.1848.1053@72.27.1848.1053" timestamp="1588389080476" />
-    <state width="1248" height="181" key="GridCell.Tab.1.right" timestamp="1589581740028">
+    <state width="1248" height="129" key="GridCell.Tab.1.left/72.27.1294.741@72.27.1294.741" timestamp="1589642129400" />
+    <state width="1802" height="181" key="GridCell.Tab.1.left/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812800" />
+    <state width="1248" height="129" key="GridCell.Tab.1.right" timestamp="1589642129401">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="181" key="GridCell.Tab.1.right/72.27.1294.741@72.27.1294.741" timestamp="1589581740028" />
-    <state width="1802" height="177" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1588389080477" />
+    <state width="1248" height="129" key="GridCell.Tab.1.right/72.27.1294.741@72.27.1294.741" timestamp="1589642129401" />
+    <state width="1802" height="181" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812801" />
     <state width="263" height="541" key="HiddenNamespacesPopup" timestamp="1587003406675">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
@@ -383,7 +383,7 @@
     <state x="382" y="89" width="672" height="678" key="search.everywhere.popup/72.27.1294.741@72.27.1294.741" timestamp="1587266806024" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TUFD@Development__TUFD.rcov" NAME="Development: TUFD Coverage Results" MODIFIED="1589562109381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
+    <SUITE FILE_PATH="coverage/TUFD@Development__TUFD.rcov" NAME="Development: TUFD Coverage Results" MODIFIED="1589640198078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
     <SUITE FILE_PATH="coverage/TUFD@IRB_console__TUFD.rcov" NAME="IRB console: TUFD Coverage Results" MODIFIED="1589560039254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
     <SUITE FILE_PATH="coverage/TUFD@Rails_console__TUFD.rcov" NAME="Rails console: TUFD Coverage Results" MODIFIED="1589581739886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
   </component>

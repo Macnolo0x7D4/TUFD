@@ -1,7 +1,7 @@
 <div class="container">
   <div class="bg-white my-8 p-5 rounded-lg shadow-lg">
     <div class="flex justify-center">
-      <h2 class="font-semibold text-indigo-600 text-4xl mb-4">Create new Article</h2>
+      <h2 class="font-semibold text-indigo-600 text-4xl mb-4"><%= title %></h2>
     </div>
     <%= form_with(model: @article, local:true) do |form| %>
       <div>
@@ -9,28 +9,20 @@
       </div>
 
       <div>
-        <%=form.label :content%>
         <%= form.rich_text_area :content %>
       </div>
 
-      <div>
-        <%=form.label :tags%>
-        <%= form.text_field :tags%>
+      <div class="flex border bg-gray-100 my-3">
+        <span class="bg-gray-200 py-1 px-2 font-bold text-medium text-gray-600">#</span><%= form.text_field :tags, placeholder:"Tags", class:"py-1 px-3 placeholder-gray-800"%>
       </div>
 
       <div>
-        <%= form.label :category_elements%>
-        <div class="row">
-          <% @categories.each do |category| %>
-            <label class="col-6 col-sm-4">
-              <%= form.check_box :category_elements, {multiple: true}, category.id, nil%>
-              <%= category.title %>
-            </label>
-          <% end %>
-        </div>
+        <%= form.label "Select a Category:", class:"text-gray-800 font-semibold" %>
+        <%= select "article", "category_ids", @categories.collect {|p| [ p.title, p.id]}, {:class => 'block appearance-none w-full bg-gray-200 border border-gray-400 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500' } %>
       </div>
-
-      <div><%= form.submit %></div>
+      <div class="flex">
+        <%= form.submit :class => 'block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded' %>
+      </div>
     <% end %>
   </div>
 </div>

@@ -1,7 +1,47 @@
-<%= render "shared/navbar" %>
-  <div class="h-screen" style="background-image: url('<%= image_path "jumbo.jpeg" %>')">
-    <h2 class="text-center text-2xl font-bold leading-9 text-gray-900 sm:text-3xl sm:leading-9 sm:truncate">
-      Learn and Share Knowledge
-    </h2>
-  </div>
-<%= render "shared/footer" %>
+<div class="pt-6 bg-cover" style="background-image: url('<%= image_path "jumbo.jpeg" %>')">
+  <nav class="relative max-w-screen-xl mx-auto flex items-center justify-between px-4 sm:px-6">
+    <div class="block text-right">
+      <div class="flex-shrink-0">
+        <%= link_to root_path do %>
+          <%= image_tag 'tufd-logo-alt-dark.svg', class:"block h-12 w-auto", alt:"TUFD Logo" %>
+        <% end %>
+      </div>
+    </div>
+    <div class="block md:hidden text-right">
+      <button class="inline-flex mx-2 my-4 px-4 py-2 border border-transparent bg-indigo-600 rounded shadow shadow-xs font-medium text-gray-100 hover:bg-indigo-500 transition ease-in-out duration-150">
+        Log In
+      </button>
+    </div>
+    <div class="hidden md:block text-right">
+      <%= link_to new_user_registration_path do %>
+        <button class="inline-flex mx-2 my-4 px-4 py-2 border border-transparent bg-indigo-600 rounded shadow shadow-xs font-medium text-gray-100 hover:bg-indigo-500 transition ease-in-out duration-150">
+          Sign up
+        </button>
+      <% end %>
+
+      <%= link_to new_user_session_path do %>
+        <button class="inline-flex mx-2 my-4 px-4 py-2 border border-transparent bg-gray-100 rounded shadow shadow-xs font-medium text-indigo-500 hover:bg-white transition ease-in-out duration-150">
+          Log in
+        </button>
+      <% end %>
+    </div>
+  </nav>
+    <div class="container h-screen">
+      <div class="flex w-1/2 h-screen flex-wrap mt-24">
+        <div class="block">
+          <h1 class="tracking-tight leading-tight text-6xl lg:text-5xl xl:text-6xl font-extrabold text-gray-800">
+            Learn and share <span class="text-indigo-500">knowledge</span>
+          </h1>
+          <p class="text-gray-700 font-light mt-8 text-xl">
+            Get your knowledge
+          </p>
+          <%= link_to new_user_registration_path do %>
+            <button class="inline-flex my-4 px-6 py-3 border text-xl border-transparent bg-indigo-600 rounded shadow shadow-lg font-medium text-gray-100 hover:bg-indigo-500 transition ease-in-out duration-150">
+              Get Started <i class="fas fa-sign-in-alt mx-3 self-center"></i>
+            </button>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  <%= render "shared/footer" %>
+</div>

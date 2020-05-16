@@ -8,14 +8,12 @@ class Article < ApplicationRecord
 
   attr_accessor :category_elements
 
-  def save_categories
+  def save_category
+    return category_articles.destroy_all if category_ids.nil? || category_ids.empty?
 
-    return category_articles.destroy_all if category_elements.nil? || category_elements.empty?
+    category_articles.where.not(category_id: category_ids).destroy_all
 
-    category_articles.where.not(category_id: category_elements).destroy_all
+    CategoryArticle.find_or_create_by(article: self, category_id: category_ids)
 
-    category_elements.each do |category_id|
-      CategoryArticle.find_or_create_by(article: self, category_id: category_id)
-    end
   end
 end

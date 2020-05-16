@@ -25,7 +25,7 @@ class ArticlesController < ApplicationController
     @article_params[:tags] = params[:article][:tags].split
     Obscenity.sanitize @article_params[:content]
     @article.update(@article_params)
-    @article.save_categories
+    @article.save_category
     redirect_to @article
   end
 
@@ -35,7 +35,7 @@ class ArticlesController < ApplicationController
     @article_params[:tags] = params[:article][:tags].split
     @article = current_user.articles.create(@article_params)
 
-    @article.save_categories
+    @article.save_category
     redirect_to @article
   end
 
@@ -52,6 +52,6 @@ class ArticlesController < ApplicationController
     end
 
     def article_params
-      params.require(:article).permit(:title, :content, category_elements: [])
+      params.require(:article).permit(:title, :content, :category_ids)
     end
 end
