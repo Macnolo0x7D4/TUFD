@@ -1,6 +1,8 @@
 import Vue from "vue/dist/vue.esm";
+import TurbolinksAdapter from 'vue-turbolinks';
+Vue.use(TurbolinksAdapter)
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('turbolinks:load', () => {
   var navbar = new Vue({
     el: "#navbar",
     data: {

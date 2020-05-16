@@ -7,7 +7,9 @@ class CommentsController < ApplicationController
   end
 
   def create
-    @comment = current_user.comments.new(comment_params)
+    @comment_params = comment_params
+    Obscenity.sanitize @comment_params[ :content ]
+    @comment = current_user.comments.new(@comment_params)
     @comment.article = @article
 
     if @comment.save
