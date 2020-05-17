@@ -1,7 +1,7 @@
 <div class="flex flex-row mb-2 group p-4 rounded-md text-sm hover:bg-gray-50">
   <div class="hidden lg:block lg:mr-3 flex-shrink-0">
     <%= link_to users_profile_path(comment.user) do %>
-      <%= image_tag comment.user.avatar, class:"inline w-12 h-12 thumbnail text-sm border-2 border-transparent rounded-full" %>
+      <%= gravatar_image_tag comment.user.email, class:"inline w-12 h-12 thumbnail text-sm border-2 border-transparent rounded-full" %>
     <% end %>
   </div>
   <div class="min-w-0 flex-grow">

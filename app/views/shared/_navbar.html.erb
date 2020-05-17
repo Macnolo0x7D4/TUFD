@@ -23,7 +23,7 @@
             <div class="flex">
               <%
                 @active_url_class = "ml-4 inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150"
-                 @url_class = "ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                @url_class = "ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
               %>
 
               <%= link_to "Dashboard", root_path, class: current_page?(root_path) ? @active_url_class : @url_class %>
@@ -52,7 +52,7 @@
             <div>
               <button class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-white transition duration-150 ease-in-out" @click="profileOpen = !profileOpen">
                 <% if user_signed_in? %>
-                  <%= image_tag current_user.avatar, class:"relative z-10 block h-8 w-8 rounded-full" %>
+                  <%= gravatar_image_tag current_user.email, class:"relative z-10 block h-8 w-8 rounded-full" %>
                 <% else %>
                   <%= link_to "Log in", new_user_session_path, class:"inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150" %>
                 <% end %>

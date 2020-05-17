@@ -7,7 +7,7 @@
     <div class="flex justify-start m-5">
       <div class="block">
       <div class="flex">
-        <%= image_tag article.user.avatar, class:"relative z-10 block h-12 w-12 rounded-full" %>
+        <%= gravatar_image_tag article.user.email, class:"relative z-10 block h-12 w-12 rounded-full" %>
         <span class="self-center text-indigo-500 font-semibold mx-3"><%= article.user.username %></span>
       </div>
       <p class="text-gray-700 self-center mt-2">

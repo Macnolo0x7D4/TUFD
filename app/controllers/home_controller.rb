@@ -6,4 +6,10 @@ class HomeController < ApplicationController
   def explore
     @articles = Article.all.order("created_at DESC").limit(3)
   end
+
+  def terms
+  end
+
+  def privacy
+  end
 end

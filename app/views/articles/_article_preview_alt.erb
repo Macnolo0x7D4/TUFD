@@ -12,7 +12,7 @@
   </div>
   <div class="flex items-center my-3 mx-4">
     <%= link_to users_profile_path(article_preview_alt.user), class:"text-gray-900 leading-none font-semibold" do %>
-      <%= image_tag article_preview_alt.user.avatar, class:"w-10 h-10 rounded-full mr-4" %>
+      <%= gravatar_image_tag article_preview_alt.user.email, class:"w-10 h-10 rounded-full mr-4" %>
     <% end %>
     <div class="text-sm">
       <%= link_to users_profile_path(article_preview_alt.user), class:"text-gray-900 leading-none font-semibold" do %>

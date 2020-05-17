@@ -3,10 +3,7 @@ class Article < ApplicationRecord
   belongs_to :user
   has_many :category_articles
   has_many :comments
-  has_many :likes
   has_many :categories, :through => :category_articles
-
-  attr_accessor :category_elements
 
   def save_category
     return category_articles.destroy_all if category_ids.nil? || category_ids.empty?

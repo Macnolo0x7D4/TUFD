@@ -22,7 +22,6 @@ class ArticlesController < ApplicationController
 
   def update
     @article_params = article_params
-    @article_params[:tags] = params[:article][:tags].split
     Obscenity.sanitize @article_params[:content]
     @article.update(@article_params)
     @article.save_category
@@ -32,7 +31,6 @@ class ArticlesController < ApplicationController
   def create
     @article_params = article_params
     Obscenity.sanitize @article_params[:content]
-    @article_params[:tags] = params[:article][:tags].split
     @article = current_user.articles.create(@article_params)
 
     @article.save_category
@@ -47,11 +45,12 @@ class ArticlesController < ApplicationController
   end
 
   private
-    def find
-      @article = Article.find(params[:id])
-    end
 
-    def article_params
-      params.require(:article).permit(:title, :content, :category_ids)
-    end
+  def find
+    @article = Article.find(params[:id])
+  end
+
+  def article_params
+    params.require(:article).permit(:title, :content, :category_ids)
+  end
 end

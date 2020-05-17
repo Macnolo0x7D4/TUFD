@@ -1,10 +1,7 @@
 class CommentsController < ApplicationController
-  before_action :authenticate_user!, only: [:create, :update, :destroy]
-  before_action :set_comment, only: [:update, :destroy]
+  before_action :authenticate_user!, only: [:create, :destroy]
+  before_action :set_comment, only: [:destroy]
   before_action :set_article
-
-  def index
-  end
 
   def create
     @comment_params = comment_params
@@ -16,18 +13,6 @@ class CommentsController < ApplicationController
       redirect_to @comment.article
     else
       puts "Failed to create comment"
-    end
-  end
-
-  def update
-    respond_to do |format|
-      if @comment.update(comment_params)
-        format.html { redirect_to @comment, notice: 'Comment was successfully updated.' }
-        format.json { render :show, status: :ok, location: @comment }
-      else
-        format.html { render :edit }
-        format.json { render json: @comment.errors, status: :unprocessable_entity }
-      end
     end
   end
 

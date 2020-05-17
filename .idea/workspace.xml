@@ -11,17 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0733cd68-10e4-45dc-af02-db52a7dc821d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/TUFD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TUFD.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/jumbo.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/jumbo.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/articles_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/articles_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/packs/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/packs/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/article.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/article.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/articles/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/articles/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users/profile_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/profile_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20200416005618_add_tags.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20200416014051_change_column_tags.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,11 +65,6 @@
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/assets/images" />
-      <recent name="$PROJECT_DIR$/app/javascript/packs" />
-      <recent name="$PROJECT_DIR$/app/assets/images/fullsize" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/javascript/components" />
       <recent name="$PROJECT_DIR$/app/views/shared" />
@@ -79,67 +72,27 @@
       <recent name="$PROJECT_DIR$/app/views/layouts/shared" />
       <recent name="$PROJECT_DIR$/app/views/layouts/components" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/images" />
+      <recent name="$PROJECT_DIR$/app/javascript/packs" />
+      <recent name="$PROJECT_DIR$/app/assets/images/fullsize" />
+    </key>
   </component>
   <component name="RunAnythingCache">
-    <myKeys>
-      <visibility group="Bundler" flag="true" />
-      <visibility group="General" flag="true" />
-      <visibility group="Grunt tasks" flag="true" />
-      <visibility group="Gulp tasks" flag="true" />
-      <visibility group="Node.js" flag="true" />
-      <visibility group="Rails generators" flag="true" />
-      <visibility group="Rake tasks" flag="true" />
-      <visibility group="Recent projects" flag="true" />
-      <visibility group="Run configurations" flag="true" />
-      <visibility group="npm" flag="true" />
-      <visibility group="rbenv shell" flag="true" />
-      <visibility group="rvm use" flag="true" />
-      <visibility group="yarn" flag="true" />
-    </myKeys>
     <option name="myCommands">
       <command value="yarn install" />
       <command value="yarn add vue-turbolinks" />
+      <command value="yarn install --cheack-files" />
+      <command value="rails g migration RemoveTags" />
+      <command value="rails db:system:change --to=postgresql" />
+      <command value="rake db:setup" />
+      <command value="rake db:prepare" />
+      <command value="rake db:create" />
+      <command value="rake db:migrate" />
+      <command value="rake db:drop" />
     </option>
   </component>
   <component name="RunManager" selected="Rails.Development: TUFD">
-    <configuration name="IRB console: TUFD" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
-      <module name="TUFD" />
-      <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
-      <IRB_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <IRB_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <IRB_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <IRB_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$APPLICATION_HOME_DIR$/plugins/ruby/rb/testing/runner/irb.rb" />
-      <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="--simple-prompt --legacy" />
-      <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Rails console: TUFD" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
-      <module name="TUFD" />
-      <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
-      <IRB_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <IRB_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <IRB_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <IRB_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/bin/rails" />
-      <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="console -- --simple-prompt --legacy" />
-      <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="true" />
-      <method v="2" />
-    </configuration>
     <configuration name="Development: TUFD" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="TUFD" />
       <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
@@ -186,6 +139,136 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="production" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="db:create: TUFD" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="TUFD" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:create" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="db:drop: TUFD" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="TUFD" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:drop" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="db:migrate: TUFD" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="TUFD" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:migrate" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="db:prepare: TUFD" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="TUFD" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:prepare" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="db:setup: TUFD" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="TUFD" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:setup" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
       <method v="2" />
     </configuration>
     <configuration name="spec: TUFD" type="RakeRunConfigurationType" factoryName="Rake">
@@ -238,17 +321,23 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="IRB console.IRB console: TUFD" />
-      <item itemvalue="IRB console.Rails console: TUFD" />
       <item itemvalue="Rails.Development: TUFD" />
       <item itemvalue="Rails.Production: TUFD" />
       <item itemvalue="Rake.spec: TUFD" />
       <item itemvalue="Rake.test: TUFD" />
+      <item itemvalue="Rake.db:migrate: TUFD" />
+      <item itemvalue="Rake.db:setup: TUFD" />
+      <item itemvalue="Rake.db:prepare: TUFD" />
+      <item itemvalue="Rake.db:drop: TUFD" />
+      <item itemvalue="Rake.db:create: TUFD" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="IRB console.Rails console: TUFD" />
-        <item itemvalue="IRB console.IRB console: TUFD" />
+        <item itemvalue="Rake.db:drop: TUFD" />
+        <item itemvalue="Rake.db:migrate: TUFD" />
+        <item itemvalue="Rake.db:create: TUFD" />
+        <item itemvalue="Rake.db:prepare: TUFD" />
+        <item itemvalue="Rake.db:setup: TUFD" />
       </list>
     </recent_temporary>
   </component>
@@ -286,6 +375,8 @@
       <workItem from="1589493444909" duration="9023000" />
       <workItem from="1589558404811" duration="20435000" />
       <workItem from="1589640121383" duration="8929000" />
+      <workItem from="1589675902390" duration="2425000" />
+      <workItem from="1589681550224" duration="4289000" />
     </task>
     <servers />
   </component>
@@ -317,45 +408,45 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="444" y="67" width="324" height="666" key="EnvironmentVariablesDialog/72.27.1294.741@72.27.1294.741" timestamp="1589384510604" />
-    <state width="1248" height="129" key="GridCell.Tab.0.bottom" timestamp="1589642129400">
+    <state width="1248" height="163" key="GridCell.Tab.0.bottom" timestamp="1589678217046">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="129" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1589642129400" />
+    <state width="1248" height="163" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1589678217046" />
     <state width="1802" height="181" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812799" />
-    <state width="1248" height="129" key="GridCell.Tab.0.center" timestamp="1589642129398">
+    <state width="1248" height="163" key="GridCell.Tab.0.center" timestamp="1589678217044">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="129" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1589642129398" />
+    <state width="1248" height="163" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1589678217044" />
     <state width="1802" height="181" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812798" />
-    <state width="1248" height="129" key="GridCell.Tab.0.left" timestamp="1589642129391">
+    <state width="1248" height="163" key="GridCell.Tab.0.left" timestamp="1589678217043">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="129" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1589642129391" />
+    <state width="1248" height="163" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1589678217043" />
     <state width="1802" height="181" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812797" />
-    <state width="1248" height="129" key="GridCell.Tab.0.right" timestamp="1589642129399">
+    <state width="1248" height="163" key="GridCell.Tab.0.right" timestamp="1589678217045">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="129" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1589642129399" />
+    <state width="1248" height="163" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1589678217045" />
     <state width="1802" height="181" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812798" />
-    <state width="1248" height="129" key="GridCell.Tab.1.bottom" timestamp="1589642129401">
+    <state width="1248" height="163" key="GridCell.Tab.1.bottom" timestamp="1589678184652">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="129" key="GridCell.Tab.1.bottom/72.27.1294.741@72.27.1294.741" timestamp="1589642129401" />
+    <state width="1248" height="163" key="GridCell.Tab.1.bottom/72.27.1294.741@72.27.1294.741" timestamp="1589678184652" />
     <state width="1802" height="181" key="GridCell.Tab.1.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812802" />
-    <state width="1248" height="129" key="GridCell.Tab.1.center" timestamp="1589642129400">
+    <state width="1248" height="163" key="GridCell.Tab.1.center" timestamp="1589678184650">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="129" key="GridCell.Tab.1.center/72.27.1294.741@72.27.1294.741" timestamp="1589642129400" />
+    <state width="1248" height="163" key="GridCell.Tab.1.center/72.27.1294.741@72.27.1294.741" timestamp="1589678184650" />
     <state width="1802" height="181" key="GridCell.Tab.1.center/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812800" />
-    <state width="1248" height="129" key="GridCell.Tab.1.left" timestamp="1589642129400">
+    <state width="1248" height="163" key="GridCell.Tab.1.left" timestamp="1589678184649">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="129" key="GridCell.Tab.1.left/72.27.1294.741@72.27.1294.741" timestamp="1589642129400" />
+    <state width="1248" height="163" key="GridCell.Tab.1.left/72.27.1294.741@72.27.1294.741" timestamp="1589678184649" />
     <state width="1802" height="181" key="GridCell.Tab.1.left/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812800" />
-    <state width="1248" height="129" key="GridCell.Tab.1.right" timestamp="1589642129401">
+    <state width="1248" height="163" key="GridCell.Tab.1.right" timestamp="1589678184651">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="129" key="GridCell.Tab.1.right/72.27.1294.741@72.27.1294.741" timestamp="1589642129401" />
+    <state width="1248" height="163" key="GridCell.Tab.1.right/72.27.1294.741@72.27.1294.741" timestamp="1589678184651" />
     <state width="1802" height="181" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812801" />
     <state width="263" height="541" key="HiddenNamespacesPopup" timestamp="1587003406675">
       <screen x="72" y="27" width="1294" height="741" />
@@ -373,18 +464,23 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="621" y="282" width="362" height="268" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/72.27.1294.741@72.27.1294.741" timestamp="1589345007786" />
-    <state x="383" y="174" width="672" height="677" key="run.anything.popup" timestamp="1589570259320">
+    <state x="383" y="174" width="672" height="677" key="run.anything.popup" timestamp="1589678190279">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="383" y="174" width="672" height="677" key="run.anything.popup/72.27.1294.741@72.27.1294.741" timestamp="1589570259320" />
+    <state x="383" y="174" width="672" height="677" key="run.anything.popup/72.27.1294.741@72.27.1294.741" timestamp="1589678190279" />
     <state x="382" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1587266806024">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="382" y="89" width="672" height="678" key="search.everywhere.popup/72.27.1294.741@72.27.1294.741" timestamp="1587266806024" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TUFD@Development__TUFD.rcov" NAME="Development: TUFD Coverage Results" MODIFIED="1589640198078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
+    <SUITE FILE_PATH="coverage/TUFD@db_create__TUFD.rcov" NAME="db:create: TUFD Coverage Results" MODIFIED="1589676907287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
+    <SUITE FILE_PATH="coverage/TUFD@Development__TUFD.rcov" NAME="Development: TUFD Coverage Results" MODIFIED="1589677005295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
+    <SUITE FILE_PATH="coverage/TUFD@db_drop__TUFD.rcov" NAME="db:drop: TUFD Coverage Results" MODIFIED="1589678192784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
     <SUITE FILE_PATH="coverage/TUFD@IRB_console__TUFD.rcov" NAME="IRB console: TUFD Coverage Results" MODIFIED="1589560039254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
+    <SUITE FILE_PATH="coverage/TUFD@db_prepare__TUFD.rcov" NAME="db:prepare: TUFD Coverage Results" MODIFIED="1589676861828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
     <SUITE FILE_PATH="coverage/TUFD@Rails_console__TUFD.rcov" NAME="Rails console: TUFD Coverage Results" MODIFIED="1589581739886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
+    <SUITE FILE_PATH="coverage/TUFD@db_setup__TUFD.rcov" NAME="db:setup: TUFD Coverage Results" MODIFIED="1589676737534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
+    <SUITE FILE_PATH="coverage/TUFD@db_migrate__TUFD.rcov" NAME="db:migrate: TUFD Coverage Results" MODIFIED="1589676980944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
   </component>
 </project>

@@ -19,7 +19,7 @@
       </div>
       <div class="flex items-center">
         <%= link_to users_profile_path(article_preview.user.id) do %>
-          <img class="w-10 h-10 rounded-full mr-4" src="<%= article_preview.user.avatar %>">
+          <%= gravatar_image_tag article_preview.user.email, class:"w-10 h-10 rounded-full mr-4" %>
         <% end %>
         <div class="text-sm">
           <%= link_to users_profile_path(article_preview.user.id) do %>
