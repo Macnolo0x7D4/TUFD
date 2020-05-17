@@ -1,12 +1,9 @@
 <% if user_signed_in? %>
   <%= form_with(model: [@article, @comment]) do |form| %>
-    <div class="card mt-4">
-      <div class="card-body">
-        <%= form.text_area :content, { placeholder:"Write your comment here" } %>
-        <div class="actions">
-          <%= form.submit %>
-        </div>
-      </div>
+    <div class="block my-4 p-4 bg-white rounded-lg border shadow-lg">
+      <%= form.text_area :content, { :placeholder => "Write your comment here...", class:"w-full placeholder-gray-700"} %>
+      <%= form.submit class:"mt-2 mr-2 px-3 py-2 bg-indigo-500 hover:bg-indigo-400 font-semibold text-gray-100 rounded shadow-lg transition ease-in-out duration-150" %>
+      <button class="mt-2 px-3 py-2 bg-gray-100 hover:bg-white font-semibold text-indigo-500 rounded shadow-lg transition ease-in-out duration-150 border">Discard Comment</button>
     </div>
   <% end %>
 <% else %>

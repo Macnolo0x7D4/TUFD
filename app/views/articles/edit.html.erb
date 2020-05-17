@@ -1,3 +1,4 @@
+<%= content_for :title, "#{@article.title}" %>
 <%= render "shared/navbar" %>
 <%= render :partial => "articles/form", :locals => {title: "Edit your Article"}%>
 <%= render "shared/footer" %>

@@ -1,6 +1,9 @@
-<div class="min-h-screen bg-gray-100 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+<%= content_for :title, "Log In" %>
+<div class="min-h-screen bg-gray-100 flex flex-col justify-center py-12 sm:px-6 lg:px-8" style="background-image: url('<%= image_path "background-pattern-session.svg" %>');">
   <div class="sm:mx-auto sm:w-full sm:max-w-md">
-    <a href="/"><img class="mx-auto h-6 w-auto" src="" /></a>
+    <%= link_to root_path do %>
+      <%= image_tag "tufd-logo-alt-dark.svg", class:"mx-auto h-12 w-auto" %>
+    <% end %>
     <h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-gray-900">
       Log in to your account
     </h2>
@@ -10,7 +13,7 @@
     </p>
   </div>
   <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-    <div class="bg-white py-8 px-4 shadow-xl sm:rounded-lg sm:px-10">
+    <div class="bg-white py-8 px-4 shadow-xl sm:rounded-lg sm:px-10 border">
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div>
           <%= f.label :email, class:"block text-sm font-medium leading-5 text-gray-700"%>
