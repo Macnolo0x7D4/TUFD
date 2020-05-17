@@ -2,6 +2,7 @@ module.exports = {
   theme: {
     maxHeight: {
       "0": "0",
+      "icon": "2.8rem",
       "1/4": "25%",
       "1/2": "50%",
       "3/4": "75%",

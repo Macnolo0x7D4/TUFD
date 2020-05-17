@@ -1,43 +1,79 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<%= render "shared/navbar" %>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+<div class="container">
+  <div class="flex justify-center my-4">
+    <h2 class="text-4xl font-bold text-indigo-600">Settings</h2>
   </div>
 
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-  <% end %>
+  <div class="bg-white rounded-lg shadow-lg p-4 m-4">
+    <div class="w-full border-b-2 border-solid border-gray-300 pb-2">
+      <h3 class="text-gray-800 text-xl font-bold">
+        Profile
+      </h3>
+      <p class="text-xs text-gray-600">This information is visible for all users.</p>
+    </div>
 
-  <div class="field">
-    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-    <% if @minimum_password_length %>
-      <br />
-      <em><%= @minimum_password_length %> characters minimum</em>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+      <% unless resource.errors.full_messages.empty? %>
+        <%= render "shared/error", resource: resource %>
+      <% end %>
+
+      <div class="my-4">
+        <%= f.label :username, class:"text-gray-700 font-semibold"%>
+        <%= f.text_field :username, autocomplete: "username", class:"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+      </div>
+
+      <div class="my-4">
+        <%= f.label :photo, class:"text-gray-700 font-semibold" %>
+        <div class="flex my-2 items-center mx-4">
+          <%= gravatar_image_tag current_user.email, class:"rounded-full h-16 w-16 mr-2" %>
+          <%= link_to "Change in Gravatar", "https://gravatar.com", target: "_blank", class:"block mx-2 p-3 bg-indigo-500 hover:bg-indigo-400 font-semibold text-gray-200 text-xs rounded shadow-lg max-h-icon transition ease-in-out duration-150" %>
+        </div>
+      </div>
+
+      <div class="my-4">
+        <%= f.label :bio, class:"text-gray-700 font-semibold" %>
+        <%= f.text_area :bio, class:"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+      </div>
+
+      <div class="my-4">
+        <%= f.label :email, class:"text-gray-700 font-semibold" %>
+        <%= f.email_field :email, autocomplete: "email", class:"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+      </div>
+
+      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+        <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+      <% end %>
+
+      <div class="my-4">
+        <%= f.label :password, class:"text-gray-700 font-semibold" %> <i class="text-xs text-gray-600">(leave blank if you don't want to change it<%= @minimum_password_length ? ", #{@minimum_password_length} characters minimum" : "" %>)</i><br />
+        <%= f.password_field :password, autocomplete: "new-password", class:"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+      </div>
+
+      <div class="my-4">
+        <%= f.label :password_confirmation, class:"text-gray-700 font-semibold" %>
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+      </div>
+
+      <div class="my-4">
+        <%= f.label :current_password, class:"text-gray-700 font-semibold" %> <i>(we need your current password to confirm your changes)</i><br />
+        <%= f.password_field :current_password, autocomplete: "current-password", class:"shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+      </div>
+
+      <div class="my-6 flex">
+        <%= f.submit "Update", class:"block mx-2 py-2 px-4 bg-indigo-500 hover:bg-indigo-400 font-semibold text-gray-200 rounded shadow max-h-icon transition ease-in-out duration-150"%>
+        <%= link_to "Discard Changes", :back, class:"block mx-2 py-2 px-4 bg-gray-100 hover:bg-white font-semibold text-indigo-500 rounded shadow max-h-icon border transition ease-in-out duration-150"%>
+      </div>
     <% end %>
   </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  <div class="bg-white rounded-lg shadow-lg p-4 m-4">
+    <h3>Cancel my account</h3>
+
+    <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+
+    <%= link_to "Back", :back %>
   </div>
+</div>
 
-  <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "current-password" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Update" %>
-  </div>
-<% end %>
-
-<h3>Cancel my account</h3>
-
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
-
-<%= link_to "Back", :back %>
+<%= render "shared/footer" %>
