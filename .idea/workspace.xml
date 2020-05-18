@@ -12,14 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0733cd68-10e4-45dc-af02-db52a7dc821d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users/profile_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/profile_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/privacy.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/privacy.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/_head.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_head.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20200516221841_create_friendly_id_slugs.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +91,7 @@
       <command value="rake db:migrate" />
     </option>
   </component>
-  <component name="RunManager" selected="IRB console.Rails console: TUFD">
+  <component name="RunManager" selected="Rails.Production: TUFD">
     <configuration name="Rails console: TUFD" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
       <module name="TUFD" />
       <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
@@ -377,7 +370,7 @@
       <workItem from="1589675902390" duration="2425000" />
       <workItem from="1589681550224" duration="4289000" />
       <workItem from="1589729685992" duration="13551000" />
-      <workItem from="1589818501366" duration="3636000" />
+      <workItem from="1589818501366" duration="4338000" />
     </task>
     <servers />
   </component>
@@ -409,45 +402,45 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="444" y="67" width="324" height="666" key="EnvironmentVariablesDialog/72.27.1294.741@72.27.1294.741" timestamp="1589384510604" />
-    <state width="1248" height="163" key="GridCell.Tab.0.bottom" timestamp="1589822466293">
+    <state width="1248" height="163" key="GridCell.Tab.0.bottom" timestamp="1589824278749">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="163" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1589822466293" />
+    <state width="1248" height="163" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1589824278749" />
     <state width="1802" height="181" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812799" />
-    <state width="1248" height="163" key="GridCell.Tab.0.center" timestamp="1589822466291">
+    <state width="1248" height="163" key="GridCell.Tab.0.center" timestamp="1589824278743">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="163" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1589822466291" />
+    <state width="1248" height="163" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1589824278743" />
     <state width="1802" height="181" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812798" />
-    <state width="1248" height="163" key="GridCell.Tab.0.left" timestamp="1589822466290">
+    <state width="1248" height="163" key="GridCell.Tab.0.left" timestamp="1589824278739">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="163" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1589822466290" />
+    <state width="1248" height="163" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1589824278739" />
     <state width="1802" height="181" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812797" />
-    <state width="1248" height="163" key="GridCell.Tab.0.right" timestamp="1589822466292">
+    <state width="1248" height="163" key="GridCell.Tab.0.right" timestamp="1589824278745">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="163" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1589822466292" />
+    <state width="1248" height="163" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1589824278745" />
     <state width="1802" height="181" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812798" />
-    <state width="1248" height="163" key="GridCell.Tab.1.bottom" timestamp="1589821814748">
+    <state width="1248" height="163" key="GridCell.Tab.1.bottom" timestamp="1589824278759">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="163" key="GridCell.Tab.1.bottom/72.27.1294.741@72.27.1294.741" timestamp="1589821814748" />
+    <state width="1248" height="163" key="GridCell.Tab.1.bottom/72.27.1294.741@72.27.1294.741" timestamp="1589824278759" />
     <state width="1802" height="181" key="GridCell.Tab.1.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812802" />
-    <state width="1248" height="163" key="GridCell.Tab.1.center" timestamp="1589821814746">
+    <state width="1248" height="163" key="GridCell.Tab.1.center" timestamp="1589824278753">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="163" key="GridCell.Tab.1.center/72.27.1294.741@72.27.1294.741" timestamp="1589821814746" />
+    <state width="1248" height="163" key="GridCell.Tab.1.center/72.27.1294.741@72.27.1294.741" timestamp="1589824278753" />
     <state width="1802" height="181" key="GridCell.Tab.1.center/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812800" />
-    <state width="1248" height="163" key="GridCell.Tab.1.left" timestamp="1589821814745">
+    <state width="1248" height="163" key="GridCell.Tab.1.left" timestamp="1589824278751">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="163" key="GridCell.Tab.1.left/72.27.1294.741@72.27.1294.741" timestamp="1589821814745" />
+    <state width="1248" height="163" key="GridCell.Tab.1.left/72.27.1294.741@72.27.1294.741" timestamp="1589824278751" />
     <state width="1802" height="181" key="GridCell.Tab.1.left/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812800" />
-    <state width="1248" height="163" key="GridCell.Tab.1.right" timestamp="1589821814747">
+    <state width="1248" height="163" key="GridCell.Tab.1.right" timestamp="1589824278756">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="163" key="GridCell.Tab.1.right/72.27.1294.741@72.27.1294.741" timestamp="1589821814747" />
+    <state width="1248" height="163" key="GridCell.Tab.1.right/72.27.1294.741@72.27.1294.741" timestamp="1589824278756" />
     <state width="1802" height="181" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1589589812801" />
     <state width="263" height="541" key="HiddenNamespacesPopup" timestamp="1587003406675">
       <screen x="72" y="27" width="1294" height="741" />
@@ -481,6 +474,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TUFD@db_create__TUFD.rcov" NAME="db:create: TUFD Coverage Results" MODIFIED="1589676907287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
     <SUITE FILE_PATH="coverage/TUFD@Development__TUFD.rcov" NAME="Development: TUFD Coverage Results" MODIFIED="1589818575719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
+    <SUITE FILE_PATH="coverage/TUFD@Production__TUFD.rcov" NAME="Production: TUFD Coverage Results" MODIFIED="1589824278571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
     <SUITE FILE_PATH="coverage/TUFD@db_drop__TUFD.rcov" NAME="db:drop: TUFD Coverage Results" MODIFIED="1589678192784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
     <SUITE FILE_PATH="coverage/TUFD@IRB_console__TUFD.rcov" NAME="IRB console: TUFD Coverage Results" MODIFIED="1589560039254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
     <SUITE FILE_PATH="coverage/TUFD@db_prepare__TUFD.rcov" NAME="db:prepare: TUFD Coverage Results" MODIFIED="1589676861828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
