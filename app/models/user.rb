@@ -8,6 +8,8 @@ class User < ApplicationRecord
   has_many :comments
   has_many :category_articles
 
+  extend FriendlyId
+  friendly_id :username, use: :slugged
 
   has_many :notifications, foreign_key: :recipient_id
   has_many :services
