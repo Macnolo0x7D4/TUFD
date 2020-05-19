@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   resources :notifications, only: [:index]
   resources :announcements, only: [:index]
-
+  resources :mentions, only: [:index]
   resources :categories
 
   resources :articles do

@@ -1,5 +1,5 @@
+<%= content_for :title, (@user.first_name.nil? or current_user.blank?) ? @user.username : "#{@user.username} (#{@user.first_name} #{@user.last_name})" %>
 <%= render "shared/navbar" %>
-<%= content_for :title, @user.username %>
 <div class="container bg-gray-200 py-5">
   <div class="grid lg:grid-cols-12 gap-8">
     <div class="mt-4 lg:mt-0 lg:col-span-4">
@@ -7,13 +7,18 @@
         <div class="flex justify-center">
           <%= gravatar_image_tag @user.email, :gravatar => {:size => 300}, class:"w-1/2 rounded-full my-3" %>
         </div>
-        <h3 class="text-gray-800 font-semibold text-3xl"><%= @user.username %></h3>
+        <h3 class="text-gray-800 font-semibold text-3xl"><%= (@user.first_name.nil? or current_user.blank?) ? @user.username : "#{@user.first_name} #{@user.last_name}" %></h3>
+        <% if user_signed_in? %>
+          <% unless @user.first_name.nil? %>
+            <p class="text-gray-600 font-semibold mb-1">Username: <span class="text-gray-600 font-medium leading-4 text-justify"><%= @user.username %></span></p>
+          <% end %>
+        <% end %>
         <p class="text-gray-600 font-semibold mb-1">Bio: <span class="text-gray-600 font-medium leading-4 text-justify"><%= user_signed_in? ? render(plain: @user.bio.empty? ? "No information about user." : @user.bio ) : "You need to sign in to see the bio." %></span></p>
         <p class="text-gray-600 font-semibold mb-1">Email: <span class="text-gray-600 font-medium leading-4 text-justify"><%= user_signed_in? ? @user.email : "You need to sign in to see the email." %></span></p>
-        <p class="text-gray-600 font-semibold mb-1">Rank: <span class="rounded-full tracking-wide px-2 py-0.5 bg-orange-500 text-gray-100 text-xs leading-4"><%= "Admin" %></span></p>
-        <p class="text-gray-600 font-semibold mb-1">Experience: <span class="rounded-full tracking-wide px-2 py-0.5 bg-indigo-500 text-gray-100 text-xs leading-4 uppercase"><%=  (@user.articles.length * 10) + (@user.comments.length * 2) %> Exp</span></p>
-        <p class="text-gray-600 font-semibold mb-1">Number of Articles: <span class="rounded-full bg-indigo-500 text-gray-100 px-2 py-0.5 leading-4 font-bold"><%= @user.articles.length %></span></p>
-        <p class="text-gray-600 font-semibold mb-1">Number of Comments: <span class="rounded-full bg-indigo-500 text-gray-100 px-2 py-0.5 leading-4 font-bold"><%= @user.comments.length %></span></p>
+        <p class="text-gray-600 font-semibold mb-1">Rank: <%= @user.admin ? render(partial: "shared/spans/admin_span") : render(partial: "shared/spans/user_span") %></p>
+        <p class="text-gray-600 font-semibold mb-1">Experience: <span class="rounded-full tracking-wide px-2 py-0.5 bg-purple-500 text-gray-100 text-xs leading-4 uppercase"><%=  (@user.articles.length * 10) + (@user.comments.length * 2) %> Exp</span></p>
+        <p class="text-gray-600 font-semibold mb-1">Number of Articles: <span class="rounded-full bg-purple-500 text-gray-100 px-2 py-0.5 leading-4 font-bold"><%= @user.articles.length %></span></p>
+        <p class="text-gray-600 font-semibold mb-1">Number of Comments: <span class="rounded-full bg-purple-500 text-gray-100 px-2 py-0.5 leading-4 font-bold"><%= @user.comments.length %></span></p>
       </div>
     </div>
     <div class="lg:col-span-8">

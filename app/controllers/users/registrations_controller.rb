@@ -10,7 +10,15 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # POST /resource
   def create
     if verify_recaptcha
-      super
+      if User.find_by_username sign_up_params[:username]
+        build_resource(sign_up_params)
+        clean_up_passwords(resource)
+        flash.now[:alert] = "User already token."
+        flash.delete :user_already_token_error
+        render :new
+      else
+        super
+      end
     else
       build_resource(sign_up_params)
       clean_up_passwords(resource)
@@ -58,7 +66,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # If you have extra params to permit, append them to the sanitizer.
   def configure_account_update_params
-    devise_parameter_sanitizer.permit(:account_update, keys: [:username, :bio])
+    devise_parameter_sanitizer.permit(:account_update, keys: [:username, :bio, :first_name, :last_name])
   end
 
   # The path used after sign up.

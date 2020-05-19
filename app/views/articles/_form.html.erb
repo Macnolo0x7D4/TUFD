@@ -1,3 +1,4 @@
+<%= stylesheet_link_tag "mentions" %>
 <div class="container">
   <div class="bg-white my-8 p-5 rounded-lg shadow-lg">
     <div class="flex justify-center">
@@ -9,7 +10,7 @@
       </div>
 
       <div>
-        <%= form.rich_text_area :content %>
+        <%= form.rich_text_area :content, data: { controller: "mentions", target: "mentions.field" }%>
       </div>
 
       <div class="flex border bg-gray-100 my-3">
