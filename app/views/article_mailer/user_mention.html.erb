@@ -1,0 +1,5 @@
+<h1>Mentioned!</h1>
+<p>Hey <%= @user.first_name.nil? ? @user.username : "#{@user.first_name} #{@user.last_name}"%> you were mentioned in the following article</p>
+<p>
+  <%= @article.title %>
+</p>

@@ -1,7 +1,13 @@
-<h1>Notifications</h1>
-
-<ul>
-  <% @notifications.each do |notification| %>
-    <li><%= render "notifications/#{notification.notifiable_type.underscore}/#{notification.action.underscore}", actor: notification.actor, notifiable: notification.notifiable  %></li>
-  <% end %>
-</ul>
+<%= render "shared/navbar" %>
+<% content_for :title, "Notifications" %>
+<div class="container">
+  <h1 class="text-4xl text-indigo-500 font-bold ml-6">Notifications</h1>
+  <div class="bg-white my-4 p-4 rounded-lg border shadow-lg">
+    <ul>
+      <% @notifications.each do |notification| %>
+        <li><%= render "notifications/#{notification.notifiable_type.underscore}/#{notification.action.underscore}", actor: notification.actor, notifiable: notification.notifiable  %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+<%= render "shared/footer" %>
