@@ -3,18 +3,18 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
-require("@rails/ujs").start()
-require("turbolinks").start()
-require("@rails/activestorage").start()
-require("channels")
-require("local-time").start()
-require("trix")
-require("alpinejs")
-require("@rails/actiontext")
+require("@rails/ujs").start();
+require("turbolinks").start();
+require("@rails/activestorage").start();
+require("channels");
+require("local-time").start();
+require("trix");
+require("alpinejs");
+require("@rails/actiontext");
 
-import '../css/application.scss'
+import "../css/application.scss";
 
-import '../controllers/modal_controller'
-import '../controllers/mentions_controller'
+import "../controllers/modal_controller";
+import "../controllers/mentions_controller";
 
-window.Rails = Rails
+window.Rails = Rails;

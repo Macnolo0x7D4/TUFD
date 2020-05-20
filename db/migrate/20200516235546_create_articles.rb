@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateArticles < ActiveRecord::Migration[6.0]
   def change
     create_table :articles do |t|
@@ -15,7 +17,7 @@ class CreateArticles < ActiveRecord::Migration[6.0]
       t.string   :checksum,   null: false
       t.datetime :created_at, null: false
 
-      t.index [ :key ], unique: true
+      t.index [:key], unique: true
     end
 
     create_table :active_storage_attachments do |t|
@@ -25,7 +27,7 @@ class CreateArticles < ActiveRecord::Migration[6.0]
 
       t.datetime :created_at, null: false
 
-      t.index [ :record_type, :record_id, :name, :blob_id ], name: "index_active_storage_attachments_uniqueness", unique: true
+      t.index %i[record_type record_id name blob_id], name: 'index_active_storage_attachments_uniqueness', unique: true
       t.foreign_key :active_storage_blobs, column: :blob_id
     end
 
@@ -36,7 +38,7 @@ class CreateArticles < ActiveRecord::Migration[6.0]
 
       t.timestamps
 
-      t.index [ :record_type, :record_id, :name ], name: "index_action_text_rich_texts_uniqueness", unique: true
+      t.index %i[record_type record_id name], name: 'index_action_text_rich_texts_uniqueness', unique: true
     end
   end
 end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # config/initializers/recaptcha.rb
 Recaptcha.configure do |config|
   config.site_key = '6LfONe8UAAAAAKZUiPmEffmtjY1rE9nBNMnT8sxk'

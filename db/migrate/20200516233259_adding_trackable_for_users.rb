@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AddingTrackableForUsers < ActiveRecord::Migration[6.0]
   def change
     # t.integer  :sign_in_count, default: 0, null: false

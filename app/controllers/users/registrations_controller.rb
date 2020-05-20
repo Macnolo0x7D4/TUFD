@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Users::RegistrationsController < Devise::RegistrationsController
   before_action :configure_sign_up_params, only: [:create]
   before_action :configure_account_update_params, only: [:update]
@@ -13,7 +15,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
       if User.find_by_username sign_up_params[:username]
         build_resource(sign_up_params)
         clean_up_passwords(resource)
-        flash.now[:alert] = "User already token."
+        flash.now[:alert] = 'User already token.'
         flash.delete :user_already_token_error
         render :new
       else
@@ -22,7 +24,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     else
       build_resource(sign_up_params)
       clean_up_passwords(resource)
-      flash.now[:alert] = "There was an error with the ReCaptcha code below. Please re-enter the code."
+      flash.now[:alert] = 'There was an error with the ReCaptcha code below. Please re-enter the code.'
       flash.delete :recaptcha_error
       render :new
     end
@@ -66,7 +68,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # If you have extra params to permit, append them to the sanitizer.
   def configure_account_update_params
-    devise_parameter_sanitizer.permit(:account_update, keys: [:username, :bio, :first_name, :last_name])
+    devise_parameter_sanitizer.permit(:account_update, keys: %i[username bio first_name last_name])
   end
 
   # The path used after sign up.

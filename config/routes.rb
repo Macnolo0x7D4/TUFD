@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
@@ -5,10 +7,9 @@ Rails.application.routes.draw do
   get '/terms', to: 'home#terms'
   get '/explore', to: 'home#explore'
 
-    authenticate :user, lambda { |u| u.admin? } do
-      mount Sidekiq::Web => '/sidekiq'
-    end
-
+  authenticate :user, ->(u) { u.admin? } do
+    mount Sidekiq::Web => '/sidekiq'
+  end
 
   resources :notifications, only: [:index]
   resources :announcements, only: [:index]
@@ -16,10 +17,10 @@ Rails.application.routes.draw do
   resources :categories
 
   resources :articles do
-    resources :comments, only: ['create', 'destroy']
+    resources :comments, only: %w[create destroy]
   end
 
-  devise_for :users, controllers: { omniauth_callbacks: "users/omniauth_callbacks", registrations: 'users/registrations' }
+  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks', registrations: 'users/registrations' }
 
   namespace :users do
     get '/:id', to: 'profile#show', as: :profile

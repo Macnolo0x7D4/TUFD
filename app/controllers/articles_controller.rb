@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class ArticlesController < ApplicationController
-  before_action :authenticate_user!, only: [:edit, :new, :update, :destroy, :create]
-  before_action :find, only: [:edit, :show, :update, :destroy]
+  before_action :authenticate_user!, only: %i[edit new update destroy create]
+  before_action :find, only: %i[edit show update destroy]
 
   def index
     @articles = Article.all

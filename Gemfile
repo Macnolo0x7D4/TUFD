@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -30,14 +32,14 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'dotenv-rails'
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'web-console', '>= 3.3.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
@@ -52,7 +54,7 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'administrate', github: 'excid3/administrate', branch: 'jumpstart'
 gem 'devise', '~> 4.7', '>= 4.7.0'
@@ -62,11 +64,11 @@ gem 'friendly_id', '~> 5.2', '>= 5.2.5'
 gem 'gravatar_image_tag', github: 'mdeering/gravatar_image_tag'
 gem 'mini_magick', '~> 4.9', '>= 4.9.2'
 gem 'name_of_person', '~> 1.1'
+gem 'obscenity'
 gem 'omniauth-facebook', '~> 5.0'
 gem 'omniauth-github', '~> 1.3'
 gem 'omniauth-twitter', '~> 1.4'
+gem 'recaptcha'
 gem 'sidekiq', '~> 6.0', '>= 6.0.3'
 gem 'sitemap_generator', '~> 6.0', '>= 6.0.1'
-gem "recaptcha"
-gem 'obscenity'
 gem 'whenever', require: false
