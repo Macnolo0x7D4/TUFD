@@ -9,12 +9,10 @@ require("@rails/activestorage").start()
 require("channels")
 require("local-time").start()
 require("trix")
-require("vue")
+require("alpinejs")
 require("@rails/actiontext")
 
 import '../css/application.scss'
-import '../packs/navbar'
-import '../packs/banner'
 
 import '../controllers/modal_controller'
 import '../controllers/mentions_controller'
