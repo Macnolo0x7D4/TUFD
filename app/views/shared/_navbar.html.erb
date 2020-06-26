@@ -28,6 +28,7 @@
 
               <%= link_to "Dashboard", root_path, class: current_page?(root_path) ? @active_url_class : @url_class %>
               <%= link_to "Explore", explore_path, class: current_page?(explore_path) ? @active_url_class : @url_class %>
+              <%= link_to "Q&A", questions_path, class: current_page?(questions_path) ? @active_url_class : @url_class %>
               <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Forum</a>
               <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Calendar</a>
             </div>
