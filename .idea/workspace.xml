@@ -11,14 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0733cd68-10e4-45dc-af02-db52a7dc821d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/TUFD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TUFD.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20200517021339_add_user_reference.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20200517021339_add_user_reference.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -397,6 +392,9 @@
       <workItem from="1593199772381" duration="258000" />
       <workItem from="1593200105462" duration="3070000" />
       <workItem from="1610492508879" duration="1237000" />
+      <workItem from="1611173668832" duration="936000" />
+      <workItem from="1611433299282" duration="25000" />
+      <workItem from="1611596131518" duration="1395000" />
     </task>
     <servers />
   </component>
@@ -419,7 +417,7 @@
     <SUITE FILE_PATH="coverage/TUFD@Production__TUFD.rcov" NAME="Production: TUFD Coverage Results" MODIFIED="1589824278571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
     <SUITE FILE_PATH="coverage/TUFD@db_migrate__TUFD.rcov" NAME="db:migrate: TUFD Coverage Results" MODIFIED="1610493526864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
     <SUITE FILE_PATH="coverage/TUFD@Rails_console__TUFD.rcov" NAME="Rails console: TUFD Coverage Results" MODIFIED="1589912775485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
-    <SUITE FILE_PATH="coverage/TUFD@Development__TUFD.rcov" NAME="Development: TUFD Coverage Results" MODIFIED="1610493548660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
+    <SUITE FILE_PATH="coverage/TUFD@Development__TUFD.rcov" NAME="Development: TUFD Coverage Results" MODIFIED="1611596179162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
     <SUITE FILE_PATH="coverage/TUFD@db_prepare__TUFD.rcov" NAME="db:prepare: TUFD Coverage Results" MODIFIED="1589676861828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
     <SUITE FILE_PATH="coverage/TUFD@db_setup__TUFD.rcov" NAME="db:setup: TUFD Coverage Results" MODIFIED="1589676737534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />
     <SUITE FILE_PATH="coverage/TUFD@db_create__TUFD.rcov" NAME="db:create: TUFD Coverage Results" MODIFIED="1589843481153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TUFD" />

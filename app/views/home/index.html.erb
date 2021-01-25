@@ -9,9 +9,11 @@
       </div>
     </div>
     <div class="block md:hidden text-right">
-      <button class="inline-flex mx-2 my-4 px-4 py-2 border border-transparent bg-indigo-600 rounded shadow shadow-xs font-medium text-gray-100 hover:bg-indigo-500 transition ease-in-out duration-150">
-        Log In
-      </button>
+      <%= link_to new_user_session_path do %>
+        <button class="inline-flex mx-2 my-4 px-4 py-2 border border-transparent bg-indigo-600 rounded shadow shadow-xs font-medium text-gray-100 hover:bg-indigo-500 transition ease-in-out duration-150">
+          Log In
+        </button>
+      <%end %>
     </div>
     <div class="hidden md:block text-right">
       <%= link_to new_user_registration_path do %>
